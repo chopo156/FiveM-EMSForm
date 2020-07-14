@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	 <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="medical_form">
+		<button id="close-button">Close</button>
+		<button type="submit" id="new">Create new form</button>
+		<h1><b><center>MEDICAL FORM</center></b></h1>
+		<div class="header">
+			<div id="search">
+				<input type="text" id="search_first" name="search" placeholder="Patient's first name">
+				<input type="text" id="search_last" name="searchLast" placeholder="Patient's last name">
+				<button type="submit" id="search_button">Search</button>
+			</div>
+		</div>
+
+
+		<!-- CHECK PT INFO -->
+		<div class="patient-info">
+			<div class="written-info"> 
+				<div id="first-name">
+					<p>First Name:</p>
+					<p id="pt-first">Remove</p>
+				</div>
+				<div id="last-name">
+					<p>Last Name: </p>
+					<p id="pt-last">Remove</p>
+				</div>
+				<div id="dob">
+					<p>DOB: </p>
+					<p id="pt-dob">Remove</p>
+				</div>
+				<div id="allergies">
+					<p>Allergies: </p>
+					<textarea id="allergies-info" disabled cols="40" rows="3" ></textarea>
+				</div>
+				<div id="assessment">
+					<p>Medical Assessment</p>
+					<textarea id="assess" cols="40" rows="4" ></textarea>
+				</div>
+				<div id="medical-history">
+					<p>Medical History:</p>
+					<textarea id="history" disabled cols="40" rows="7" ></textarea>
+				</div>
+			</div>
+			<button id="update">Update</button>
+			<button id="delete">Delete</button>
+		</div>
+		<!----------------------------------------------------------------->
+
+		<!-- CREATE NEW FORM -->
+		<div class="new-form">
+			<div class="written-info">
+				<div id="input-first">
+					<p>First Name:</p>
+					<input type="text" id="first_name"  placeholder="First Name">
+				</div>
+				<div id="input-last">
+					<p>Last Name:</p>
+					<input type="text" id="last_name"  placeholder="Last Name">
+				</div>
+				<div id="input-dob">
+					<p>DOB:</p>
+					<input type="text" id="dob-pt"  placeholder="YYYY-MM-DD">
+				</div>
+				<div id="input-allergies">
+					<p>Allergies:</p>
+					<textarea id="pt-allergies" name="allergies" placeholder="Known Allergies"
+					cols="40" rows="4"></textarea>
+				</div>
+				<div id="input-assessment">
+					<p>Medical Assessment:</p>
+					<textarea id="reason" name="assessment" placeholder="Current Date - Describe injuries inflicted on the patient" cols="40" rows="6"></textarea>
+				</div>
+			</div>
+			<button id="save">Save</button>
+		</div>
+		<!----------------------------------------------------------------->
+
+		<div class="error">
+			<h3>Medical history not found</h3>
+		</div>
+	</div>
+	 <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
